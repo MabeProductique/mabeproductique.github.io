@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio" />
+    <meta name="author" content="Martin Bérubé" />
+    <title>Portfolio</title>
+
+    <!-- Bootstrap’s CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- alternative = bootstrap-icons.min.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom CSS for highlighting -->
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3">
+        <div class="container-xxl">
+            <!-- navbar brand / title -->
+            <a class="navbar-brand" href="index.html">
+                <img class="img-thumbnail rounded-circle" src="assets/martinberube.png" alt="" width="36" height="36">
+                <!-- <span class="text-secondary fw-bold">MB</span>-->
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">retour</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main image & Header-->
+    <section id="top" class="bg-dark p-2">
+        <header class="header">
+            <div class="container-fluid text-center">
+                <h1 class="display-2 fw-bolder text-white">Compétences</h1>
+            </div>
+        </header>
+    </section>
+
+    <main class="bg-light">
+
+        <div class="container mt-3">
+            <!-- Search form -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" id="searchInput"
+                    placeholder="Rechercher une compétence..." aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Skills -->
+        <section id="competences" title="Compétences">
+            <div class="container-lg pt-5 ">
+                <div class="text-center">
+                    <h1 class="text-primary">Techniques</h1>
+                    <h5 class="text-secondary">"Hard skills"</h5>
+                </div>
+
+                <div class="accordion pt-3" id="accordionNiveau">
+                    <caption>Légende</caption>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Niveau débutant
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionNiveau">
+                            <div class="accordion-body">
+                                Je possède une connaissance de base dans le domaine, mais j'ai besoin d'une supervision
+                                et d'une formation étroite pour accomplir les tâches de manière autonome.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Niveau intermédiaire
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionNiveau">
+                            <div class="accordion-body">
+                                J'ai acquis une expérience et une compréhension solides dans le domaine et je peux
+                                travailler de manière autonome sur la plupart des tâches, mais je peux avoir besoin
+                                d'un soutien ou de conseils occasionnels pour des situations plus complexes.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Niveau avancé
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionNiveau">
+                            <div class="accordion-body">
+                                J'ai une expertise approfondie dans le domaine et je suis capable de résoudre des
+                                problèmes complexes de manière autonome. Je peux également être capable de former et
+                                de superviser des collègues moins expérimentés.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Niveau expert
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionNiveau">
+                            <div class="accordion-body">
+                                Je suis considéré comme une autorité dans le domaine, possédant une connaissance
+                                approfondie et une expérience étendue. Je suis souvent consulté pour des conseils et
+                                des décisions stratégiques dans mon domaine d'expertise.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table table-striped table-striped-columns caption-top">
+                    <caption>Systèmes d'exploitation pour ordinateurs personnels</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 40%;"></th>
+                            <th scope="col" style="width: 15%;">débutant</th>
+                            <th scope="col" style="width: 15%;">intermédiaire</th>
+                            <th scope="col" style="width: 15%;">avancé</th>
+                            <th scope="col" style="width: 15%;">expert</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Microsoft Windows</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Chrome OS</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Linux</th>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">macOS</th>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-striped table-striped-columns caption-top">
+                    <caption>Systèmes d'exploitation pour appareils mobiles</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 40%;"></th>
+                            <th scope="col" style="width: 15%;">débutant</th>
+                            <th scope="col" style="width: 15%;">intermédiaire</th>
+                            <th scope="col" style="width: 15%;">avancé</th>
+                            <th scope="col" style="width: 15%;">expert</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Android</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">iOS</th>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-striped table-striped-columns caption-top">
+                    <caption>Suite d'outils de productivités</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 40%;"></th>
+                            <th scope="col" style="width: 15%;">débutant</th>
+                            <th scope="col" style="width: 15%;">intermédiaire</th>
+                            <th scope="col" style="width: 15%;">avancé</th>
+                            <th scope="col" style="width: 15%;">expert</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Microsoft 365</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Google Workspace</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Apple iWork</th>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-striped table-striped-columns caption-top">
+                    <caption>Outils</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 40%;"></th>
+                            <th scope="col" style="width: 15%;">débutant</th>
+                            <th scope="col" style="width: 15%;">intermédiaire</th>
+                            <th scope="col" style="width: 15%;">avancé</th>
+                            <th scope="col" style="width: 15%;">expert</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">GitHub</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Visual Studio</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Visual Studio Code</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-striped table-striped-columns caption-top">
+                    <caption>Languages de programmation</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 40%;"></th>
+                            <th scope="col" style="width: 15%;">débutant</th>
+                            <th scope="col" style="width: 15%;">intermédiaire</th>
+                            <th scope="col" style="width: 15%;">avancé</th>
+                            <th scope="col" style="width: 15%;">expert</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">C#</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg text-center "></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">VB.NET</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JavaScript</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Python</th>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">AL</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">VBA</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="h2 bi bi-check-lg"></i></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- retour vers le haut -->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a class="btn btn-outline-secondary btn-sm" title="Aller en haut!" href="#">
+                        <span><i class="bi bi-arrow-bar-up"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer-->
+    <footer class="container-fluid bg-dark mt-auto p-1">
+        <div class="text-center">
+            <span class="text-white">&copy; 2024 Martin Bérubé</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap’s script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom JavaScript for highlighting words -->
+    <script>
+        $(document).ready(function () {
+            // Function to highlight the search word
+            function highlightSearchWord(searchWord) {
+                // Remove previous highlights
+                $('.highlight').removeClass('highlight');
+
+                // Iterate through each table cell
+                var found = false;
+                $('table th').each(function () {
+                    var cellText = $(this).text().toLowerCase();
+                    var regex = new RegExp(searchWord, 'g');
+
+                    // If the word is found in the cell
+                    if (cellText.indexOf(searchWord) !== -1) {
+                        // Scroll to the position of the table cell
+                        $('html, body').animate({
+                            scrollTop: $(this).offset().top
+                        }, 100);
+
+                        // Highlight the word
+                        var highlightedText = cellText.replace(regex, '<span class="highlight">' + searchWord + '</span>');
+                        $(this).html(highlightedText);
+
+                        found = true;
+                        return false; // Exit the loop
+                    }
+                });
+
+                // If the word is not found in any cell
+                if (!found) {
+                    // Show Bootstrap alert for 2 seconds
+                    var alertElement = $('<div class="alert alert-danger alert-dismissible fade show" role="alert">Aucune correspondance! Veuillez essayer un autre mot...</div>');
+                    $('.container').prepend(alertElement);
+                    setTimeout(function () {
+                        alertElement.alert('close');
+                    }, 1500);
+                }
+            }
+
+            // Trigger search when the form is submitted
+            $('form').submit(function (event) {
+                event.preventDefault(); // Prevent default form submission
+                var searchWord = $('#searchInput').val().trim().toLowerCase();
+                if (searchWord !== '') {
+                    highlightSearchWord(searchWord);
+                }
+            });
+
+            // Remove highlight when input is cleared
+            $('#searchInput').on('input', function () {
+                if ($(this).val().trim() === '') {
+                    $('.highlight').removeClass('highlight');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
