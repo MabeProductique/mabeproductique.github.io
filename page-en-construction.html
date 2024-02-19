@@ -21,8 +21,8 @@
         <div class="container-xxl">
             <!-- navbar brand / title -->
             <a class="navbar-brand" href="index.html">
-                <img class="img-thumbnail rounded-circle" src="assets/martinberube.png" alt="" width="36" height="36">
-                <!--<span class="text-secondary fw-bold"></span>-->
+                <img class="img-thumbnail rounded-circle" src="assets/martinberube.png" alt="" width="48" height="48">
+                <span class="text-secondary fw-bold">Martin Bérubé</span>
             </a>
             <!-- toggle button for mobile nav -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
@@ -34,46 +34,75 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">retour</a>
+                        <a class="nav-link" href="index.html">Page d'accueil</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- main image & Header-->
-    <section id="top" class="bg-dark py-2">
-        <header class="header">
-            <div class="container-md  text-center">
-                <h2 class="display-2 fw-bolder text-white">La page est en construction</h2>
-            </div>
-        </header>
-    </section>
 
-    <main class="bg-light">
-        <section class="py-0">
-            <div class="container px-5 my-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="text-center mb-5">
-                            <h1 class="fw-bolder">En rédaction</h1>
-                            <h5 class="text-secondary">Revenez me voir bientôt</h5>
+    <!-- main image & Header
+    <header class="bg-dark">
+        <div class="container-fluid p-3">
+            <h1 class="text-center text-white">Page en construction</h1>
+        </div>
+    </header>-->
+
+    <main class="bg-light p-3">
+        <section id="expertise" title="Page en construction">
+            <div class="container-fluid">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 col-lg-8 col-xl-6">
+                        <h1 class="text-primary ">Page en construction</h1>
+                        <h5 class="text-secondary">En rédaction...</h5>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8 col-xl-6">
+                        <div>
+                            <img class="img-fluid rounded-3" src="assets/page-en-construction.jpg" alt="" />
                         </div>
                     </div>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-12 col-lg-8 "><img class="img-fluid rounded-3 mb-5"
-                            src="assets/page-en-construction.jpg" alt="" />
-                    </div> <!-- 1300x700-->
- 
+            </div>
+        </section>
+
+        <!-- retour vers le haut -->
+        <div class="container-fluid text-center pt-1">
+            <a class="btn btn-outline-secondary btn-sm" title="Aller en haut!" href="#">
+                <span><i class="bi bi-arrow-bar-up"></i></span>
+            </a>
+        </div>
+
+        <section id="rencontre" title="Planifier une rencontre">
+            <div class="container-fluid pt-3">
+                <div class="row justify-content-center">
+                    <div class="text-center">
+                        <p class="lead">Revenez me voir bientôt!</p>
+                        <a class="btn btn-lg btn-outline-primary " href="rencontre.html">Planifier une rencontre avec
+                            moi!</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-     <!-- Footer-->
-     <footer class="container-fluid bg-dark mt-auto p-1">
-        <div class="text-center">
+      <!-- Footer-->
+      <footer class="bg-dark mt-auto p-1">
+        <div class="container-fluid d-flex align-items-center justify-content-center">
             <span class="text-white">&copy; 2024 Martin Bérubé</span>
+            <a href="https://github.com/MabeProductique" class="btn btn-sm btn-outline-primary ms-3"
+                rel="noopener noreferrer" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/berubemartin" class="btn btn-sm btn-outline-primary ms-3"
+                rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="rencontre.html" class="btn btn-sm btn-outline-primary ms-3" rel="noopener noreferrer"
+                aria-label="Microsoft Teams">
+                <i class="bi bi-microsoft-teams"></i>
+            </a>
         </div>
     </footer>
 
