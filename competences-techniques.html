@@ -70,25 +70,27 @@
                 <div class="row justify-content-center py-3">
                     <div class="col-12 col-lg-8 col-xl-6">
                         <!-- Search form -->
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" id="searchInput"
-                                placeholder="Rechercher une compétence..." aria-label="Search">
-                            <button class="btn btn-outline-primary" type="submit">Search</button>
-                        </form>
+                        <div class="container">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" id="searchInput"
+                                    placeholder="Rechercher une compétence..." aria-label="Search">
+                                <button class="btn btn-outline-primary" type="submit">Search</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-8 col-xl-6">
-                        <div class="accordion pt-3" id="accordionNiveau">
+                        <div class="accordion accordion-flush pt-3" id="accordionNiveau">
                             <caption>Légende</caption>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                         Niveau débutant
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                <div id="collapseOne" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionNiveau">
                                     <div class="accordion-body">
                                         Je possède une connaissance de base dans le domaine, mais j'ai besoin d'une
@@ -126,10 +128,8 @@
                                     data-bs-parent="#accordionNiveau">
                                     <div class="accordion-body">
                                         J'ai une expertise approfondie dans le domaine et je suis capable de résoudre
-                                        des
-                                        problèmes complexes de manière autonome. Je peux également être capable de
-                                        former et
-                                        de superviser des collègues moins expérimentés.</div>
+                                        des problèmes complexes de manière autonome. Je peux également être capable de
+                                        former et de superviser des collègues moins expérimentés.</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
