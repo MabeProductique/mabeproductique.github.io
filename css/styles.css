@@ -1,0 +1,16 @@
+.highlight {
+    background-color: yellow;
+}
+
+.custom-container {
+    height: 50rem; /* Change the height value as needed */
+}
+
+.pb-50 {
+    padding-bottom: 50rem !important
+}
+
+
+.babylon {
+    background-color: transparent;
+}

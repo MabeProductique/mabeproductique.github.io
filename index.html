@@ -7,12 +7,13 @@
     <meta name="description" content="Martin Bérubé" />
     <meta name="author" content="Martin Bérubé" />
     <title>Martin Bérubé</title>
-
     <!-- Bootstrap’s CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <!-- alternative = bootstrap-icons.min.css -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap’s CSS local-->
+    <link href="css\bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -68,10 +69,14 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" title="Recherche" href="expertise-veille.html">Veille
-                                    technologique</a></li>
+                                    technologique</a>
+                            </li>
+                            <li><a class="dropdown-item" title="Recherche"
+                                    href="expertise-collaboration.html">Collaboration</a>
+                            </li>
                             <li><a class="dropdown-item" title="Recherche" href="expertise-prototype.html">Développement
-                                    de prototypes
-                                    fonctionnels</a></li>
+                                    de prototypes fonctionnels</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -88,8 +93,19 @@
                             <li><a class="dropdown-item" href="competences-relationelles.html">Relationnelles</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="recommandations.html">RECOMMANDATIONS</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#Compétences" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            RECOMMANDATIONS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="recommandations.html">Recommandations</a> </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="temoignage.html">Témoignage</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page-en-construction.html">PORTFOLIO</a>
@@ -194,11 +210,12 @@
                     <h5 class="text-secondary">Les divers projets auxquels je contribue activement</h5>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-lg-6">
-                        <ol class="list-group list-group-numbered text-start list-group-item-secondary   ">
-                            <li class="list-group-item">Accompagnement</li>
-                            <li class="list-group-item">Assistance Technique</li>
-                            <li class="list-group-item">Recherche</li>
+                    <div class="col-auto">
+                        <ol class="list-group list-group-numbered text-start  ">
+                            <li class="list-group-item">Accompagnement: diagnostics, sélections et mentorat</li>
+                            <li class="list-group-item">Assistance Technique: architecture, développement et
+                                programmation</li>
+                            <li class="list-group-item">Recherche: veille, collaboration et prototypes</li>
                         </ol>
                     </div>
                 </div>
@@ -218,10 +235,12 @@
                             <h5 class="card-title">Diagnostic numérique</h5>
                             <p class="card-subtitle text-primary">Conseiller</p>
                             <p class="card-text">
-                                Le rôle d'un conseiller en diagnostic numérique est de recueillir et d'analyser des
+                                Le rôle d'un conseiller en diagnostic numérique est de recueillir et d'analyser
+                                des
                                 données, de comprendre les processus existants, et d'<strong>identifier les
                                     lacunes</strong> ou
-                                les opportunités pour <strong>améliorer l'efficacité et la productivité</strong> des
+                                les opportunités pour <strong>améliorer l'efficacité et la productivité</strong>
+                                des
                                 entreprises grâce à des solutions numériques.</p>
                         </div>
                         <a href="expertise-diagnostic.html" class="btn btn-outline-primary m-3">Détails</a>
@@ -235,8 +254,10 @@
                             <h5 class="card-title">Sélection de solutions numériques</h5>
                             <p class="card-subtitle text-primary">Conseiller</p>
                             <p class="card-text">Le rôle d'un conseiller en sélection de solutions numériques
-                                consiste à aider les entreprises à identifier, évaluer et <strong>choisir les meilleures
-                                    solutions technologiques</strong> pour répondre à leurs besoins spécifiques.</p>
+                                consiste à aider les entreprises à identifier, évaluer et <strong>choisir les
+                                    meilleures
+                                    solutions technologiques</strong> pour répondre à leurs besoins spécifiques.
+                            </p>
                         </div>
                         <a href="expertise-selection.html" class="btn btn-outline-primary m-3">Détails</a>
                         <!--<div class="card-footer">
@@ -248,9 +269,12 @@
                         <div class="card-body">
                             <h5 class="card-title">Mentorat</h5>
                             <p class="card-subtitle text-primary">Mentor</p>
-                            <p class="card-text">Le rôle d'un mentor est de d'agir comme un <strong>guide, partageant
-                                    son expertise technique</strong>, offrant des <strong>conseils sur les meilleures
-                                    pratiques</strong>, aidant à résoudre les défis complexes, et inspirant les membres
+                            <p class="card-text">Le rôle d'un mentor est de d'agir comme un <strong>guide,
+                                    partageant
+                                    son expertise technique</strong>, offrant des <strong>conseils sur les
+                                    meilleures
+                                    pratiques</strong>, aidant à résoudre les défis complexes, et inspirant les
+                                membres
                                 de l'équipe à
                                 atteindre leur objectif.</p>
                         </div>
@@ -263,7 +287,8 @@
                 <!-- Expertises groupe 2-->
                 <div class="text-center pt-3">
                     <h3 class="text">Assistance Technique</h3>
-                    <h5 class="text-secondary">Services d'architecture, développement et programmation sur mesure
+                    <h5 class="text-secondary">Services d'architecture, développement et programmation sur
+                        mesure
                         pour concrétiser les projets numériques des entreprises.</h5>
                 </div>
                 <div class="card-group">
@@ -329,7 +354,8 @@
                             <h5 class="card-title">Veille technologique</h5>
                             <p class="card-subtitle text-primary">Veilleur technologique</p>
                             <p class="card-text">Le rôle d'un veilleur technologique est de
-                                <strong>surveiller et d'analyser de manière proactive les tendances</strong>, les
+                                <strong>surveiller et d'analyser de manière proactive les tendances</strong>,
+                                les
                                 avancées et les développements dans le domaine de la technologie.
                             </p>
                         </div>
@@ -344,7 +370,8 @@
                             <h5 class="card-title">Collaboration et Innovation</h5>
                             <p class="card-subtitle text-primary">Programmeur</p>
                             <p class="card-text">
-                                Le rôle du programmeur est <strong>contribuer à des projets open source</strong> en
+                                Le rôle du programmeur est <strong>contribuer à des projets open source</strong>
+                                en
                                 collaborant
                                 activement sur des dépôts partagés, en encourageant la
                                 <strong>transparence</strong>, en stimulant
@@ -365,7 +392,8 @@
                             <p class="card-text">Le rôle d'un développeur de prototypes fonctionnels consiste à
                                 créer et à <strong>mettre en œuvre des versions initiales</strong> de solutions
                                 logicielles.
-                                Ces prototypes sont conçus pour <strong>démontrer les fonctionnalités clés</strong>
+                                Ces prototypes sont conçus pour <strong>démontrer les fonctionnalités
+                                    clés</strong>
                                 et
                                 permettre
                                 l'évaluation de leur faisabilité et de leur utilité <strong>dans un contexte
@@ -445,7 +473,6 @@
             </a>
         </div>
     </footer>
-
 
     <!-- Bootstrap’s script -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
