@@ -10,7 +10,7 @@
 
     <!-- Bootstrap’s CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <!-- alternative = bootstrap-icons.min.css -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -18,12 +18,12 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark pt-5 pb-4">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3">
         <div class="container-xxl">
             <!-- navbar brand / title -->
             <a class="navbar-brand" href="index.html">
-                <img class="img-thumbnail rounded-circle" src="assets/profile.png" alt="" width="36" height="36">
-                <span class="text-secondary fw-bold">MB</span>
+                <img class="img-thumbnail rounded-circle" src="assets/martinberube.png" alt="" width="48" height="48">
+                <span class="text-secondary fw-bold">Martin Bérubé</span>
             </a>
             <!-- toggle button for mobile nav -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
@@ -35,64 +35,161 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">retour</a>
+                        <a class="nav-link" href="index.html">Page d'accueil</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- main image & Header-->
-    <section id="top" class="bg-dark py-2">
-        <header class="header">
-            <div class="container-md  text-center">
-                <h1 class="fw-bolder text-white">Témoignage et recommandations</h1>
-            </div>
-        </header>
-    </section>
+    <!-- main image & Header
+    <header class="bg-dark">
+        <div class="container-fluid p-3">
+            <h1 class="text-center text-white">Recommandations</h1>
+        </div>
+    </header>-->
 
     <main class="bg-light">
 
-        <!-- video -->
-        <section id="reference" title="Cas à succès">
-            <div class="container pt-5">
+        <!-- Recommandations -->
+        <section id="recommandations" title="Recommandations">
+            <div class="container p-3">
                 <div class="text-center">
-                    <h2>Cas à succès</h2>
-                    <p class="lead text-muted">Des commentaires de clients...</p>
+                    <h1 class="text-primary">Recommandations</h1>
+                    <h5 class="text-secondary">Des commentaires d'anciens clients</h5>
                 </div>
-                <div class="d-flex justify-content-center ">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube-nocookie.com/embed/e-r_PyvcY6E?si=JvfZ0Xl3ZiWYoE_m"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                <div class="row text-center pt-5">
+                    <div class="col-12 col-md-6 col-xxl-4 pb-5">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://media.licdn.com/dms/image/C4D03AQEuKYI12GWYYw/profile-displayphoto-shrink_200_200/0/1516516030580?e=1713398400&v=beta&t=Jak8UPG4dwv2Gw6dn80NKg5o5XFHZqAb0zrZvcvLZYs"
+                                class="rounded-circle shadow-lg" width="100" height="100" />
+                        </div>
+                        <p class="lead my-3 text-muted">
+                            "J'ai eu la chance de travailler directement avec Martin dans la résolution de problèmes,la
+                            création d'outils d'aide à la décision et de documents de qualité permettant de fabriquer
+                            des produits de qualité avec efficience. Il est un travailleur acharné qui livre les
+                            résultats en temps et en qualité. J'ai beaucoup apprécié sa rigueur.
+                            Martin est un atout pour toute entreprise qui a la chance de l'avoir dans son équipe."
+                        </p>
+                        <p class="font-italic font-weight-normal mb-0">- Christian Fillion, MBA </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-xxl-4 pb-5">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://media.licdn.com/dms/image/D5603AQHykj5KczGrJw/profile-displayphoto-shrink_200_200/0/1684960733496?e=1713398400&v=beta&t=7gZzFSS4gZpe7N_0LMa5I6S-fAluI92oQcqRAoG6G9Q"
+                                class="rounded-circle shadow-lg" width="100" height="100" />
+                        </div>
+                        <p class="lead my-3 text-muted">
+                            "Martin Berube is one of those A player individuals that come around every 10 years. To use
+                            a sports analogy, he is a first round draft pick that will make a significant difference on
+                            day one. He is polite and respectful and knows when to share his thoughts in a constructive
+                            team building way. His talents exceed what I have seen from typical CAD programmers
+                            significantly.
+                            It would be a complete pleasure to have the opportunity to work with Martin again. "
+                        </p>
+                        <p class="font-italic font-weight-normal">- Tory Weber</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-xxl-4 pb-5">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://media.licdn.com/dms/image/C5603AQHRgK1rNUxlpA/profile-displayphoto-shrink_100_100/0/1576106694385?e=1713398400&v=beta&t=p976v_C0XGfTQ7aa4XKS_3834siYODwXOTb9f_Ed-GY"
+                                class="rounded-circle shadow-lg" width="100" height="100" />
+                        </div>
+                        <p class="lead my-3 text-muted">
+                            "Très bon sens de l'analyse et sait apporter des solutions efficaces.
+                            j'ai bien apprécié mener des dossiers en ta collaboration et espère que nous aurons
+                            l'occasion de relever d'autres défis ensemble dans le futur.
+                            Martin "
+                        </p>
+                        <p class="font-italic font-weight-normal mb-0">- Martin Lafontaine </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- retour vers le haut -->
-        <div class="container-fluid pt-2 ">
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <a class="btn btn-secondary btn-sm " href="#">
+                <!-- retour vers le haut -->
+                <div class="container-fluid text-center">
+                    <a class="btn btn-outline-secondary btn-sm" title="Aller en haut!" href="#">
                         <span><i class="bi bi-arrow-bar-up"></i></span>
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Recommandations 2 -->
+        <section id="recommandations" title="Recommandations">
+            <div class="container p-3 border-top ">
+                <div class="text-center">
+                    <!-- R<h1 class="text-primary">Recommandations</h1>-->
+                    <h5 class="text-secondary">Des commentaires d'anciens collègues</h5>
+                </div>
+                <div class="row text-center pt-5">
+                    <div class="col-12 col-md-6 col-xxl-4 pb-5">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://media.licdn.com/dms/image/C4D03AQGnXjfNFfi8Eg/profile-displayphoto-shrink_100_100/0/1516848607833?e=1713398400&v=beta&t=gPc74EX0_HZzY1L7fuaTMqdR691ePmh9MwTIXCs_BHo"
+                                class="rounded-circle shadow-lg" width="100" height="100" />
+                        </div>
+                        <p class="lead my-3 text-muted">
+                            "Apprécié par l’ensemble de ses collègues, c’est un élément plus que compétent, l’entreprise
+                            à la chance de l’avoir au sein de l’organisation par ses compétences organisationnelles
+                            supérieures lui confèrent un net avantage sur les autres. De plus, il est une personne
+                            travaillant, simple, intègre et toujours agréable à travailler, et prend toutes les tâches
+                            avec enthousiasme et dévouement même lorsque la pression est haute. Martin fait preuve d’un
+                            réel professionnalisme et d’une rigueur à toute épreuve. "
+                        </p>
+                        <p class="font-italic font-weight-normal">- Trung Ha</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-xxl-4 pb-5">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://media.licdn.com/dms/image/C5603AQHqRgTuiOkwuw/profile-displayphoto-shrink_100_100/0/1516652043975?e=1713398400&v=beta&t=ni6SfL95HMwIc2-cGBnNIsYC-B4ETtjH1VC9U2TVgT0"
+                                class="rounded-circle shadow-lg" width="100" height="100" />
+                        </div>
+                        <p class="lead my-3 text-muted">
+                            "Depuis que je connais Martin, il n'a cessé de s'améliorer et d'accumuler les compétences.
+                            Lorsque Martin se lance dans nouveau sujet, il le pousse à fond et son but est toujours de
+                            fournir le meilleur résultat. Son travail est toujours professionnel et soigné et il remet
+                            constamment les méthode de travail en question. C'est un plaisir de travailler avec Martin
+                            car on sait qu'on peut compter sur lui."
+                        </p>
+                        <p class="font-italic font-weight-normal mb-0">- François Racine </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-xxl-4 pb-5">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://media.licdn.com/dms/image/C4D03AQH-TsPiNsONmw/profile-displayphoto-shrink_200_200/0/1518842920205?e=1713398400&v=beta&t=64yiZ1BUrIvbvFuF-Yj5eRdoX5VX2p9e9LLlOE_HeS0"
+                                class="rounded-circle shadow-lg" width="100" height="100" />
+                        </div>
+                        <p class="lead my-3 text-muted">
+                            "Martin est dédié à l'excellence. Il est exceptionnellement autonome et peut travailler sans
+                            supervision et vous pouvez toujours compter sur lui pour livrer la marchandise."
+                        </p>
+                        <p class="font-italic font-weight-normal mb-0">- Sylvain Trudel </p>
+                    </div>
+                </div>
+                <!-- retour vers le haut -->
+                <div class="container-fluid text-center">
+                    <a class="btn btn-outline-secondary btn-sm" title="Aller en haut!" href="#">
+                        <span><i class="bi bi-arrow-bar-up"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer-->
-    <div class="container-fluid pt-5 mt-auto">
-        <footer class="border-top">
-            <p class="text-center">&copy; 2024 Martin Bérubé</p>
-        </footer>
-    </div>
+    <footer class="bg-dark mt-auto p-1">
+        <div class="container-fluid d-flex align-items-center justify-content-center">
+            <span class="text-white">&copy; 2024 Martin Bérubé</span>
+            <a href="https://github.com/MabeProductique" class="btn btn-sm btn-outline-primary ms-3"
+                rel="noopener noreferrer" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/berubemartin" class="btn btn-sm btn-outline-primary ms-3"
+                rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="rencontre.html" class="btn btn-sm btn-outline-primary ms-3" rel="noopener noreferrer"
+                aria-label="Microsoft Teams">
+                <i class="bi bi-microsoft-teams"></i>
+            </a>
+        </div>
+    </footer>
 
     <!-- Bootstrap’s script -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>

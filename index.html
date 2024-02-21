@@ -4,25 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio MB" />
+    <meta name="description" content="Martin Bérubé" />
     <meta name="author" content="Martin Bérubé" />
     <title>Martin Bérubé</title>
-
     <!-- Bootstrap’s CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <!-- alternative = bootstrap-icons.min.css -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap’s CSS local-->
+    <link href="css\bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark pt-5 pb-4">
-        <div class="container-xxl">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3 ">
+        <div class="container-fluid">
             <!-- navbar brand / title -->
             <a class="navbar-brand" href="index.html">
-                <span class="text-secondary fw-bold">MB</span>
+                <!--<img class="img-thumbnail rounded-circle" src="assets/martinberube.png" alt="" width="36" height="36">-->
+                <!-- <span class="text-secondary fw-bold">MB</span>-->
             </a>
             <!-- toggle button for mobile nav -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
@@ -34,16 +36,82 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#infos">Infos</a>
+                        <a class="nav-link text-uppercase" href="#infos">À propos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase" href="#expertises" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Expertises
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#expertises">Expertises</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" title="Accompagnement"
+                                    href="expertise-diagnostic.html">Diagnostic numérique</a></li>
+                            <li><a class="dropdown-item" title="Accompagnement"
+                                    href="expertise-selection.html">Selection de solutions</a></li>
+                            <li><a class="dropdown-item" title="Mentorat" href="expertise-mentorat.html">Mentorat</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" title="Assistance Technique"
+                                    href="expertise-architecture.html">Architecture de
+                                    solutions</a></li>
+                            <li><a class="dropdown-item" title="Assistance Technique"
+                                    href="expertise-developpement.html">Développement de
+                                    solutions</a></li>
+                            <li><a class="dropdown-item" title="Programmation"
+                                    href="expertise-programmation.html">Programmation</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" title="Recherche" href="expertise-veille.html">Veille
+                                    technologique</a>
+                            </li>
+                            <li><a class="dropdown-item" title="Recherche"
+                                    href="expertise-collaboration.html">Collaboration</a>
+                            </li>
+                            <li><a class="dropdown-item" title="Recherche" href="expertise-prototype.html">Développement
+                                    de prototypes fonctionnels</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase" href="#Compétences" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Compétences
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#competences">Compétences</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="competences-techniques.html">Techniques</a></li>
+                            <li><a class="dropdown-item" href="competences-relationelles.html">Relationnelles</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase" href="#Compétences" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Recommandations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="recommandations.html">Recommandations</a> </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="temoignage.html">Témoignages</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projets">Type de projets</a>
+                        <a class="nav-link text-uppercase" href="page-en-construction.html">Exemples</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="recommandations.html">Références</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="btn btn-primary text-uppercase" href="rencontre.html">Planifier une rencontre</a>
                     </li>
                 </ul>
             </div>
@@ -51,221 +119,292 @@
     </nav>
 
     <!-- main image & Header-->
-    <section id="top" class="bg-dark py-2">
-        <div class="container-fluid">
-            <header class="header text-center">
-                <img class="img-thumbnail rounded-circle" src="assets/profile.png" alt="" width="400" height="400">
-                <h1 class="display-2 fw-bolder text-white">Martin Bérubé</h1>
-                <h2 class="display-6 fw-bolder text-white">
-                    <span style="color: rgb(0, 128, 0);">Conseiller</span>
-                    <span> &middot</span>
-                    <span style="color: rgb(255, 165, 0);">Architecte</span>
-                    <span>&middot</span>
-                    <span style="color: gray;">Développeur</span>
-                </h2>
-            </header>
+    <header class="bg-dark">
+        <div class="container-fluid text-center p-3">
+            <img class="img-thumbnail rounded-circle" src="assets/martinberube.png" alt="" width="512" height="512">
+            <h1 class="fw-bolder text-white pt-3">Martin Bérubé</h1>
+            <h3 class="fw-bolder text-white">
+                <span style="color: rgb(0, 128, 0);">Conseiller</span>
+                <span> &middot</span>
+                <span style="color: rgb(255, 165, 0);">Architecte</span>
+                <span>&middot</span>
+                <span style="color: gray;">Développeur</span>
+            </h3>
         </div>
-    </section>
+    </header>
 
     <main class="bg-light">
 
         <!-- infos -->
         <section id="infos" title="Infos">
-            <div class="container-fluid pt-5">
-                <div class="text-center ">
-                    <h2>Infos</h2>
-                    <p class="lead text-muted mb-3">Un peu d'infos sur moi...</p>
+            <div class="container-lg p-3">
+                <div class="text-center">
+                    <h1 class="text-primary">Mon expérience</h1>
+                    <h5 class="text-secondary">Un peu d'infos sur moi</h5>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="text-start">
-                            <p>
-                                Depuis le début des années 2000, je conseille les entreprises du Québec
-                                dans l'utilisation et l’implantation des logiciels nécessaires à la réalisation,la
-                                gestion et la valorisation des données des produits manufacturés.
-                            </p>
-                            <p>
-                                Animé par ma passion pour les solutions informatiques, je reste constamment à l'affût
-                                des dernières avancées technologiques afin d'enrichir mes compétences et de dénicher les
-                                solutions susceptibles d'accroître la productivité des entreprises qui sollicitent mes
-                                services.
-                            </p>
-                            <p>
-                                Mon parcours professionnel m'a conduit à intervenir dans une multitude de projets,
-                                élargissant ainsi mes horizons à travers une diversité de fonctions telles que le
-                                support technique, la formation, le conseil, la programmation, le développement et
-                                l'architecture. Cette polyvalence m'a permis d'acquérir un éventail de compétences
-                                variées, allant de la conception 3D à la fabrication et à l'impression 3D, en passant
-                                par la programmation et l'élaboration de solutions numériques.
-                            </p>
-                            <p>
-                                À l'heure actuelle, la majeure partie de mon temps est consacrée à des missions de
-                                conseil, d'architecture et de développement, où je conçois des solutions personnalisées
-                                et érige des passerelles pour améliorer la productivité des entreprises.
-                            </p>
-                        </div>
-                    </div>
+                <div class="pt-3">
+                    <p>
+                        Depuis le début des années 2000, je conseille les entreprises
+                        dans l'utilisation et l’implantation des logiciels nécessaires à la réalisation, la
+                        gestion et la valorisation des données des produits manufacturés.
+                    </p>
+                    <p>
+                        Mon parcours professionnel m'a conduit à intervenir dans une multitude de projets,
+                        élargissant ainsi mes horizons à travers une diversité de fonctions telles que le
+                        support technique, la formation, le conseil, la conception 3D, la programmation, le
+                        développement et l'architecture informatique. Cette polyvalence m'a permis d'acquérir un
+                        éventail de compétences variées, allant de la conception 3D à la programmation
+                        informatique, en passant par la fabrication et l'impression 3D.
+                    </p>
+                    <p>
+                        Cette expérience diversifiée m'a permis de développer une expertise transversale dans le
+                        domaine de la technologie, combinant à la fois des compétences techniques pointues et
+                        une capacité à communiquer efficacement avec diverses parties prenantes. Mon engagement
+                        dans des projets variés m'a également permis de développer une approche innovante et
+                        créative pour résoudre les défis techniques et conceptuels.
+                    </p>
+                    <p>
+                        En tant que professionnel polyvalent, j'ai démontré ma capacité à m'adapter rapidement à
+                        de nouveaux environnements et à apprendre de nouvelles technologies. Ma passion pour
+                        l'innovation et mon désir constant d'amélioration m'ont permis de rester à la pointe des
+                        avancées technologiques, tout en apportant une valeur ajoutée à chaque projet auquel je
+                        participe.
+                    </p>
+                    <p>
+                        Grâce à mes compétences en conception 3D, programmation et architecture informatique,
+                        j'ai pu non seulement contribuer au développement de produits innovants, mais également
+                        jouer un rôle essentiel dans leur mise en œuvre et leur déploiement réussis. Mon
+                        expérience dans la formation et le support technique m'a également permis de partager
+                        mes connaissances avec d'autres membres de l'équipe et de favoriser un environnement
+                        collaboratif et productif.
+                    </p>
+                    <p>
+                        À l'heure actuelle, la majeure partie de mon temps est consacrée à des missions de
+                        conseil, d'architecture, développement et programmation, où je conçois des solutions
+                        informatiques
+                        personnalisées et érige des passerelles entres des logiciels pour améliorer la
+                        productivité des entreprises.
+                    </p>
+                    <p>
+                        En résumé, mon parcours professionnel diversifié et mes compétences polyvalentes font de
+                        moi un atout précieux pour tout projet nécessitant une expertise technique, une
+                        créativité et un engagement envers l'excellence. Je suis enthousiaste à l'idée de
+                        relever de défis et de contribuer au succès de futurs projets.
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- retour vers le haut -->
-        <div class="container-fluid pt-2">
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <a class="btn btn-secondary btn-sm " href="#">
-                        <span><i class="bi bi-arrow-bar-up"></i></span>
-                    </a>
-                </div>
-            </div>
+        <div class="container-fluid text-center">
+            <a class="btn btn-outline-secondary btn-sm" title="Aller en haut!" href="#">
+                <span><i class="bi bi-arrow-bar-up"></i></span>
+            </a>
         </div>
 
-        <!-- projets -->
-        <section id="projets" title="Projets">
-            <div class="text-center">
-                <h2>Projets</h2>
-                <p class="lead text-muted">Les divers projets auxquels je contribue:</p>
-            </div>
-            <!-- projets Type 1-->
-            <div class="container-lg pt-5 ">
+        <!-- Expertises -->
+        <section id="expertises" title="Expertises">
+            <div class="container-xl p-3">
                 <div class="text-center">
-                    <h2>Accompagnement</h2>
-                    <p class="lead text-muted">...</p>
+                    <h1 class="text-primary">Mon expertise</h1>
+                    <h5 class="text-secondary">Les divers projets auxquels je contribue activement</h5>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <ol class="list-group list-group-numbered text-start  ">
+                            <li class="list-group-item"><strong>Accompagnement</strong>: diagnostics, sélections et
+                                mentorat</li>
+                            <li class="list-group-item"><strong>Assistance Technique</strong>: architecture,
+                                développement et
+                                programmation</li>
+                            <li class="list-group-item"><strong>Recherche</strong>: veille, collaboration et prototypes
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-xl p-3">
+                <!-- Expertises groupe 1-->
+                <div class="text-center">
+                    <h3 class="text">Accompagnement</h3>
+                    <h5 class="text-secondary">Réalisation de diagnostics, sélection de solutions et mentorat.</h5>
                 </div>
                 <div class="card-group">
                     <div class="card ">
-                        <img src="assets/mentorat.jpg" class="card-img-top " alt="Type 1">
+                        <img src="assets/expertise-diagnostic.jpg" class="card-img-top" alt="diagnostic">
                         <div class="card-body">
-                            <h5 class="card-title">Accompagnement en transformation numérique</h5>
-                            <p class="lead card-subtitle">Conseiller</p>
+                            <h5 class="card-title">Diagnostic numérique</h5>
+                            <p class="card-subtitle text-primary">Conseiller</p>
                             <p class="card-text">
-                                Le rôle d'un conseiller en transformation numérique consiste à accompagner les
-                                entreprises dans leur transition vers des processus et des technologies numériques.</p>
+                                Le rôle d'un conseiller en diagnostic numérique est de recueillir et d'analyser
+                                des
+                                données, de comprendre les processus existants, et d'<strong>identifier les
+                                    lacunes</strong> ou
+                                les opportunités pour <strong>améliorer l'efficacité et la productivité</strong>
+                                des
+                                entreprises grâce à des solutions numériques.</p>
                         </div>
-                        <a href="projet-accompagnement.html" class="btn btn-outline-primary m-3">Exemple de projet</a>
+                        <a href="expertise-diagnostic.html" class="btn btn-outline-primary m-3">Détails</a>
                         <!--<div class="card-footer">
-                            <small class="text-body-secondary">...</small>
-                        </div> -->
-                    </div>
-                    <div class="card ">
-                        <img src="assets/mentorat.jpg" class="card-img-top " alt="Type 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Diagnostique numérique</h5>
-                            <p class="lead card-subtitle">Analyste</p>
-                            <p class="card-text">
-                                Le rôle d'un analyste de solutions numériques est d'analyser les besoins et les
-                                exigences d'une entreprise ou d'une organisation en matière de solutions informatiques.
-                                Cela implique de recueillir et d'analyser des données, de comprendre les processus
-                                métier existants, et d'identifier les lacunes ou les opportunités pour améliorer
-                                l'efficacité et la productivité grâce à des solutions numériques.</p>
-                        </div>
-                        <a href="projet-accompagnement.html" class="btn btn-outline-primary m-3">Exemple de projet</a>
-                        <!--<div class="card-footer">
-                            <small class="text-body-secondary">...</small>
+                            <small class="text-body-secondary"></small>
                         </div> -->
                     </div>
                     <div class="card">
-                        <img src="assets/selection.jpg" class="card-img-top" alt="Type 2">
+                        <img src="assets/expertise-selection.jpg" class="card-img-top" alt="selection">
                         <div class="card-body">
                             <h5 class="card-title">Sélection de solutions numériques</h5>
-                            <p class="lead card-subtitle">Analyste</p>
-                            <p class="card-text">Le rôle d'un conseiller en sélection de solutions numériques consiste à
-                                aider les entreprises à identifier, évaluer et choisir les meilleures solutions
-                                technologiques pour répondre à leurs besoins spécifiques.</p>
+                            <p class="card-subtitle text-primary">Conseiller</p>
+                            <p class="card-text">Le rôle d'un conseiller en sélection de solutions numériques
+                                consiste à aider les entreprises à identifier, évaluer et <strong>choisir les
+                                    meilleures
+                                    solutions technologiques</strong> pour répondre à leurs besoins spécifiques.
+                            </p>
                         </div>
-                        <a href="projet-accompagnement.html" class="btn btn-outline-primary m-3">Exemple de projet</a>
+                        <a href="expertise-selection.html" class="btn btn-outline-primary m-3">Détails</a>
                         <!--<div class="card-footer">
-                            <small class="text-body-secondary">...</small>
+                            <small class="text-body-secondary"></small>
+                        </div> -->
+                    </div>
+                    <div class="card">
+                        <img src="assets/expertise-mentor.jpg" class="card-img-top" alt="mentorat">
+                        <div class="card-body">
+                            <h5 class="card-title">Mentorat</h5>
+                            <p class="card-subtitle text-primary">Mentor</p>
+                            <p class="card-text">Le rôle d'un mentor est de d'agir comme un <strong>guide,
+                                    partageant
+                                    son expertise technique</strong>, offrant des <strong>conseils sur les
+                                    meilleures
+                                    pratiques</strong>, aidant à résoudre les défis complexes, et inspirant les
+                                membres
+                                de l'équipe à
+                                atteindre leur objectif.</p>
+                        </div>
+                        <a href="expertise-mentorat.html" class="btn btn-outline-primary m-3">Détails</a>
+                        <!--<div class="card-footer">
+                            <small class="text-body-secondary"></small>
                         </div> -->
                     </div>
                 </div>
-            </div>
-            <!-- projets Type 2-->
-            <div class="container-lg pt-5 ">
-                <div class="text-center">
-                    <h2>Assistance Technique</h2>
-                    <p class="lead text-muted">...</p>
+                <!-- Expertises groupe 2-->
+                <div class="text-center pt-3">
+                    <h3 class="text">Assistance Technique</h3>
+                    <h5 class="text-secondary">Services d'architecture, développement et programmation sur
+                        mesure
+                        pour concrétiser les projets numériques des entreprises.</h5>
                 </div>
                 <div class="card-group">
                     <div class="card">
-                        <img src="assets/architecture.jpg" class="card-img-top" alt="Type 2">
+                        <img src="assets/expertise-architecte.jpg" class="card-img-top" alt="architecte">
                         <div class="card-body">
                             <h5 class="card-title">Architecture de solutions numériques</h5>
-                            <p class="lead card-subtitle">Architecte</p>
-                            <p class="card-text">Le rôle d'un architecte de solutions numériques est de concevoir des
-                                architectures techniques et fonctionnelles pour répondre aux besoins informatiques et
-                                commerciaux d'une organisation.</p>
+                            <p class="card-subtitle text-primary">Architecte</p>
+                            <p class="card-text">Le rôle d'un architecte de solutions numériques est de
+                                <strong>concevoir des architectures techniques et fonctionnelles</strong> pour
+                                répondre
+                                aux besoins
+                                informatiques des entreprises.
+                            </p>
                         </div>
-                        <a href="projet-technique.html" class="btn btn-outline-primary m-3">Exemple de projet</a>
+                        <a href="expertise-architecture.html" class="btn btn-outline-primary m-3">Détails</a>
                         <!--<div class="card-footer">
-                            <small class="text-body-secondary">...</small>
+                            <small class="text-body-secondary"></small>
                         </div> -->
                     </div>
                     <div class="card">
-                        <img src="assets/programmation.jpg" class="card-img-top" alt="Type 2">
+                        <img src="assets/expertise-developpeur.jpg" class="card-img-top" alt="developpeur">
                         <div class="card-body">
-                            <h5 class="card-title">Développement de solutions nunériques</h5>
-                            <p class="lead card-subtitle">Développeur</p>
-                            <p class="card-text">Le rôle du développeur de solutions numériques est de concevoir,
-                                développer et mettre en œuvre des logiciels, des applications ou des systèmes
-                                informatiques pour répondre aux besoins spécifiques des utilisateurs ou des clients.</p>
+                            <h5 class="card-title">Développement de solutions numériques</h5>
+                            <p class="card-subtitle text-primary">Développeur</p>
+                            <p class="card-text">Le rôle du développeur de solutions numériques est de
+                                <strong>mettre en oeuvre des frameworks, librairies ou des applications</strong>
+                                pour répondre aux besoins spécifiques des entreprises.
+                            </p>
                         </div>
-                        <a href="projet-technique.html" class="btn btn-outline-primary m-3">Exemple de projet</a>
+                        <a href="expertise-developpement.html" class="btn btn-outline-primary m-3">Détails</a>
                         <!--<div class="card-footer">
-                            <small class="text-body-secondary">...</small>
+                            <small class="text-body-secondary"></small>
                         </div> -->
                     </div>
                     <div class="card">
-                        <img src="assets/programmation.jpg" class="card-img-top" alt="Type 2">
+                        <img src="assets/expertise-programmeur.jpg" class="card-img-top" alt="programmeur">
                         <div class="card-body">
-                            <h5 class="card-title">Programmation de solutions nunériques</h5>
-                            <p class="lead card-subtitle">Programmeur</p>
-                            <p class="card-text">Le rôle d'un programmeur de solutions numériques est de traduire les
-                                exigences fonctionnelles et techniques d'un projet en code informatique utilisable.</p>
+                            <h5 class="card-title">Programmation</h5>
+                            <p class="card-subtitle text-primary">Programmeur</p>
+                            <p class="card-text">
+                                Le rôle du programmeur est de <strong>traduire les exigences
+                                </strong> fonctionnelles et techniques d'un projet <strong>en code
+                                    informatique utilisable.</strong>
+                            </p>
                         </div>
-                        <a href="projet-technique.html" class="btn btn-outline-primary m-3">Exemple de projet</a>
+                        <a href="expertise-developpement.html" class="btn btn-outline-primary m-3">Détails</a>
                         <!--<div class="card-footer">
-                            <small class="text-body-secondary">...</small>
+                            <small class="text-body-secondary"></small>
                         </div> -->
                     </div>
                 </div>
-            </div>
-            <!-- projets Type 3-->
-            <div class="container-lg pt-5 ">
-                <div class="text-center">
-                    <h2>Recherche</h2>
-                    <p class="lead text-muted">...</p>
+                <!-- Expertises groupe 3-->
+                <div class="text-center pt-3">
+                    <h3 class="text">Recherche</h3>
+                    <h5 class="text-secondary">Veille, collaboration et développement de prototypes innovants et
+                        fonctionnels.</h5>
                 </div>
                 <div class="card-group">
                     <div class="card">
-                        <img src="assets/programmation.jpg" class="card-img-top" alt="Type 3">
+                        <img src="assets/expertise-veille.jpg" class="card-img-top" alt="veille">
                         <div class="card-body">
                             <h5 class="card-title">Veille technologique</h5>
-                            <p class="lead card-subtitle">Veilleur technologique</p>
-                            <p class="card-text">Le rôle d'une personne qui fait de la veille technologique est de
-                                surveiller et d'analyser de manière proactive les tendances, les avancées et les
-                                développements dans le domaine de la technologie.</p>
+                            <p class="card-subtitle text-primary">Veilleur technologique</p>
+                            <p class="card-text">Le rôle d'un veilleur technologique est de
+                                <strong>surveiller et d'analyser de manière proactive les tendances</strong>,
+                                les
+                                avancées et les développements dans le domaine de la technologie.
+                            </p>
                         </div>
-                        <a href="projet-recherche.html" class="btn btn-outline-primary m-3">Exemple de projet</a>
+                        <a href="expertise-veille.html" class="btn btn-outline-primary m-3">Détails</a>
                         <!--<div class="card-footer">
-                            <small class="text-body-secondary">...</small>
+                            <small class="text-body-secondary"></small>
                         </div> -->
                     </div>
                     <div class="card">
-                        <img src="assets/techno.jpg" class="card-img-top" alt="Type 3">
+                        <img src="assets/expertise-collaboration.jpg" class="card-img-top" alt="programmeur">
                         <div class="card-body">
-                            <h5 class="card-title">Développement de prototypes fonctionnels</h5>
-                            <p class="lead card-subtitle">Développeur</p>
-                            <p class="card-text">Le rôle d'un développeur de prototypes fonctionnels est de concevoir et
-                                de
-                                développer des versions initiales de produits ou de solutions logicielles qui démontrent
-                                les
-                                fonctionnalités clés et permettent d'évaluer leur faisabilité et leur utilité dans un
-                                contexte réel. </p>
+                            <h5 class="card-title">Collaboration et Innovation</h5>
+                            <p class="card-subtitle text-primary">Programmeur</p>
+                            <p class="card-text">
+                                Le rôle du programmeur est <strong>contribuer à des projets open source</strong>
+                                en
+                                collaborant
+                                activement sur des dépôts partagés, en encourageant la
+                                <strong>transparence</strong>, en stimulant
+                                l'<strong>innovation collaborative</strong> et favorisant le <strong>partage des
+                                    connaissances</strong>.
+                            </p>
                         </div>
-                        <a href="projet-recherche.html" class="btn btn-outline-primary m-3">Exemple de projet</a>
+                        <a href="expertise-collaboration.html" class="btn btn-outline-primary m-3">Détails</a>
                         <!--<div class="card-footer">
-                            <small class="text-body-secondary">...</small>
+                            <small class="text-body-secondary"></small>
+                        </div> -->
+                    </div>
+                    <div class="card">
+                        <img src="assets/expertise-prototype.jpg" class="card-img-top" alt="prototype">
+                        <div class="card-body">
+                            <h5 class="card-title">Mise en œuvre de prototypes fonctionnels</h5>
+                            <p class="card-subtitle text-primary">Développeur</p>
+                            <p class="card-text">Le rôle d'un développeur de prototypes fonctionnels consiste à
+                                créer et à <strong>mettre en œuvre des versions initiales</strong> de solutions
+                                logicielles.
+                                Ces prototypes sont conçus pour <strong>démontrer les fonctionnalités
+                                    clés</strong>
+                                et
+                                permettre
+                                l'évaluation de leur faisabilité et de leur utilité <strong>dans un contexte
+                                    réel</strong>.
+                            </p>
+                        </div>
+                        <a href="expertise-prototype.html" class="btn btn-outline-primary m-3">Détails</a>
+                        <!--<div class="card-footer">
+                            <small class="text-body-secondary"></small>
                         </div> -->
                     </div>
                 </div>
@@ -273,32 +412,69 @@
         </section>
 
         <!-- retour vers le haut -->
-        <div class="container-fluid pt-2 ">
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <a class="btn btn-secondary btn-sm " href="#">
-                        <span><i class="bi bi-arrow-bar-up"></i></span>
-                    </a>
+        <div class="container-fluid text-center ">
+            <a class="btn btn-outline-secondary btn-sm" title="Aller en haut!" href="#">
+                <span><i class="bi bi-arrow-bar-up"></i></span>
+            </a>
+        </div>
+
+        <!-- Competences -->
+        <section id="competences" title="Compétences">
+            <div class="container-xl p-3">
+                <div class="text-center">
+                    <h1 class="text-primary">Mes compétences</h1>
+                    <h5 class="text-secondary">Techniques et relationnelles</h5>
+                </div>
+                <div class="card-group">
+                    <div class="card" id="competence1" title="Compétences Techniques">
+                        <div class="card-body">
+                            <h3 class="card-title">Techniques</h3>
+                            <p class="card-subtitle text-primary">(Hard skills)</p>
+                            <p class="card-text">Les compétences techniques acquises tout au long de mon
+                                parcours professionnel.</p>
+                        </div>
+                        <a href="competences-techniques.html" class="btn btn-outline-primary m-3">Détails</a>
+                    </div>
+                    <div class="card" id="competence2" title="Compétences Relationnelles">
+                        <div class="card-body">
+                            <h3 class="card-title">Relationnelles</h3>
+                            <p class="card-subtitle text-primary">(Soft skills)</p>
+                            <p class="card-text">Les traits de caractère qui me définissent. Mes aptitudes
+                                professionnelles.</p>
+                        </div>
+                        <a href="competences-relationelles.html" class="btn btn-outline-primary m-3">Détails</a>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- retour vers le haut -->
+        <div class="container-fluid text-center ">
+            <a class="btn btn-outline-secondary btn-sm" title="Aller en haut!" href="#">
+                <span><i class="bi bi-arrow-bar-up"></i></span>
+            </a>
         </div>
 
     </main>
 
     <!-- Footer-->
-    <div class="container-fluid pt-5 mt-auto ">
-        <footer class="border-top">
-            <p class="text-center">&copy; 2024 Martin Bérubé</p>
-            <div class="d-flex justify-content-center ">
-                <a href="https://github.com/MabeProductique" rel="noopener noreferrer">
-                    <i class="bi bi-github fs-3 me-3"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/berubemartin" rel="noopener noreferrer">
-                    <i class="bi bi-linkedin fs-3 me-3"></i>
-                </a>
-            </div>
-        </footer>
-    </div>
+    <footer class="bg-dark mt-auto p-1">
+        <div class="container-fluid d-flex align-items-center justify-content-center">
+            <span class="text-white">&copy; 2024 Martin Bérubé</span>
+            <a href="https://github.com/MabeProductique" class="btn btn-sm btn-outline-primary ms-3"
+                rel="noopener noreferrer" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/berubemartin" class="btn btn-sm btn-outline-primary ms-3"
+                rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="rencontre.html" class="btn btn-sm btn-outline-primary ms-3" rel="noopener noreferrer"
+                aria-label="Microsoft Teams">
+                <i class="bi bi-microsoft-teams"></i>
+            </a>
+        </div>
+    </footer>
 
     <!-- Bootstrap’s script -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
